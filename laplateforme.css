@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Open Sans,Arial,sans-serif;
+    margin: 0;
+    
+}
+
+.menu {
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+}
+
+.menu .menu-left img {
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 80%;
+}
+
+.menu .menu-right {
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    padding-top: 15px;
+    width: 50%;
+}
+
+menu{
+    width: 70%;
+    background-color: white;
+}
+
+menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+}
+
+menu ul li{
+    float: left;
+    width: auto;
+    padding-left: 2%;
+    text-align: center;
+    position: relative;
+}
+
+menu ul::after{
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 10%;
+}
+
+menu a{
+    display: block;
+    text-decoration: none;
+    color: #939393;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+menu a:hover{
+    color: #D6D6D6;
+    border-bottom: 2px solid #2EA3F2;
+    transition: 0.8s;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    z-index: 1000;
+}
+menu > ul li:hover .sous{
+    padding-top: 10%;
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding-right: 20%;
+    padding: 5px;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.liste > a::after{
+    margin-top:  30px;
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+
+h1 {
+    color: #336699;
+}
+
+.first {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    background-color: #336699;
+}
+
+.first .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    text-align: justify;
+    width: 50%;
+    height: auto;
+    line-height: 1,2em;
+    color: #ffffff; 
+    padding-top: 220px;
+}
+
+.first .content p {
+    font-size: larger;
+    font-weight: lighter;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.first .content h3 {
+   text-align: center;
+}
+.first .content span {
+    font-weight: bold;
+}
+
+.first .img {
+    width: 50%;
+}
+
+.first .img img {
+    height: auto;
+    max-width: 100%;
+}
+
+.first .content a {
+    margin-top: 20px;
+    margin-left: 300px;
+    text-align: center;
+    height: 50px;
+    width: 300px; 
+    padding: 3%;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff!important;
+    border-width: 2px!important;
+    border-color: #ff2063;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    background-color: #ff2063;
+
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: #336699;
+    box-shadow: 0px 0px 60px 0px rgb(71 74 182 / 12%);
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 30px;
+}
+.posicon{
+    display: flex;
+    justify-content: center;
+}
+.icon span {
+    font-weight: bold;
+}
+
+.icon img {
+    padding-left: 40%;
+    height: auto;
+    width: 20%;
+}
+
+.icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* width: fit-content; */
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color:#ffca4b;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
+/* .web{
+    background-color: #2EA3F2;
+    width: fit-content;
+}
+.ia{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+.cyber{
+    margin-left: 40px;
+    margin-top: 70px;
+} */
+.icon a:hover{
+    letter-spacing: 1px;
+}
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.third .icon2 {
+    display: flex;
+    color: #336699;
+    box-shadow: 0px 0px 60px 0px rgb(71 74 182 / 12%);
+    width: 1000px;
+    height: 150px;
+    margin: 20px;
+    padding: 40px;
+    padding-top: 30px;
+}
+
+.icon2 img {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.third a {
+    font-size: 16p;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    background-color:#ffca4b;
+    border-width: 10px!important;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.third a:hover{
+    letter-spacing: 2px;
+}
+
+.temoin {
+    color: #ffffff;
+    background-color: #ffa000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.temoin h1 {
+    color: #ffffff;
+}
+.video2{
+    margin-left: 30px;
+}
+.video1{
+    margin-right: 30px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #313131!important;
+    color: #ffffff!important;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+footer .infos a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.plateforme {
+    display: flex;
+    flex-direction: column;
+}
+
+.formations {
+    display: flex;
+    flex-direction: column;
+}
